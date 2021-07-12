@@ -1,0 +1,21 @@
+1. It first froze my QEMU. I think it is because of all various bugs, but it didnt fully break QEMU. I just force quit the QEMU and restart the machine and it is recovered without errors. I put out copy_status_bar function to be commented so I just have to test the draw_vert function first.
+
+2. copy_status_bar is not in use : it is because i never put in the function to be used anyway. I have to make another helper function to show up the status bar just like show up the screen. -> status bar shows up, but with blacked all. Have to implement other helper functions to make it as a status bar. Not quite sure we have to impelment the details though.
+
+3. Another bug is for status bar location. It should be in B618 i am pretty sure following my PS2 document. Maybe I am missing just one click point. If this takes too long, I will just move on and ask piazza post related to it. -> this is something I get help from peopl e in the lab. They told me how it works that the way it is implemented with the macro is something we should care. OUTB macro especially, so I have to put it in the other way like 6B18 not B618. 
+
+4. status bar is correctly shown, but it is up there with offset error, I am not quite sure how to resolve this while I have to focus more on TUX_controller. I really am frustrating.
+
+5. 
+
+
+
+10. text.c: expected expression before else -> forgot to put {} after if statement, simple bug solved. 
+
+
+11. BLACK STATUS BAR -> right non scrolling status bar is now there, from fixing the register. However, I have to move on to TUX first before fixing those status bar issue. I think I am almost  up there for building the status bar though. TUX here I begin.
+
+12. running out of time, status bar blinking in fault location is something im looking at but, I do not think I can fix it in time. another one that I totally forgot is git pushing after git commits. Im pushing it now so i can get at least some points here and there
+
+13. 
+

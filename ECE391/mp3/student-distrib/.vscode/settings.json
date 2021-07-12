@@ -1,0 +1,8 @@
+{
+    "files.associations": {
+        "interrupts.h": "c",
+        "console.h": "c",
+        "execute.h": "c",
+        "lib.h": "c"
+    }
+}
